@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using BepInEx;
 using HarmonyLib;
 using System.Collections.Generic;
@@ -38,7 +38,6 @@ namespace Fly
                     else
                     {
                         GorillaLocomotion.GTPlayer.Instance.GetComponent<Rigidbody>().velocity = Vector3.zero;
-
                     }
 
                 }
