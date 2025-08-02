@@ -8,7 +8,7 @@ namespace Fly
     {
         void Update()
         {
-            if (NetworkSystem.Instance.InRoom && NetworkSystem.Instance.GameModeString.Contains("MODDED"))
+            if (NetworkSystem.Instance.InRoom && NetworkSystem.Instance.GameModeString.ToLower().Contains("modded_"))
             {
                 if (ControllerInputPoller.instance.rightControllerPrimaryButton) // a
                 {
@@ -28,3 +28,4 @@ namespace Fly
         }
     }
 }
+
